@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; width: 1080px; height: 1440px; background: #f4f2eb; color: #18342c;
+  font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; padding: 78px; }
+.label { color: #47715e; font-size: 25px; letter-spacing: 4px; border-bottom: 2px solid #b8c9b7; padding-bottom: 28px; }
+.content { height: 1110px; overflow: hidden; padding-top: 35px; }
+h1 { font-size: 62px; line-height: 1.35; margin: 0 0 34px; overflow-wrap: anywhere; }
+.body { font-size: 34px; line-height: 1.7; overflow-wrap: anywhere; }
+p { margin: 0 0 24px; } ul, ol { padding-left: 46px; } li { margin-bottom: 14px; }
+h2, h3 { font-size: 39px; margin: 28px 0 16px; }
+pre { background: #173d33; color: #f2f8ee; padding: 25px; border-radius: 18px; font-size: 25px;
+  white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.55; }
+code { font-family: "SFMono-Regular", Consolas, monospace; }
+footer { display: flex; justify-content: space-between; font-size: 24px; color: #608270; padding-top: 25px; }
+</style>
+<div class="label">AI 编程 · 技术笔记</div>
+<section class="content"><h1>{{ title }}</h1><div class="body">{{ body | safe }}</div></section>
+<footer><span>把技术讲明白，把实践做起来</span><span>{{ index }} / {{ total }}</span></footer>
+</html>
